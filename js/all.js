@@ -51,7 +51,7 @@ btn01.addEventListener('click', function(e){
 if (endBtn) {
   endBtn.addEventListener('click', function(e){
     localStorage.clear() 
-    window.location.href=`../../index.html`;
+    window.location.href=`index.html`;
 
   },false)
 }
