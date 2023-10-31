@@ -193,3 +193,16 @@ else {
 
 
 }
+
+
+
+
+// 等待 iframe 加載完成
+const iframe = document.getElementById('questionnaireIframe'); // 替換 'your-iframe-id' 為實際的 iframe ID
+
+if (iframe) {
+  iframe.onload = function() {
+    // 重新載入整個頁面至 iframe 導向的網頁
+    window.location.href = iframe.contentWindow.location.href;
+};
+}
