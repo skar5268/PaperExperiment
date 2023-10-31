@@ -24,7 +24,7 @@ if(starBtn){
     let orderArray = JSON.parse(localStorage.getItem('myOrder'))
     orderArray[0]["done"] = "active"
     localStorage.setItem("myOrder", JSON.stringify(orderArray));
-    window.location.href=`./pages/materials/ver0${orderArray[0]["no"]}.html`;
+    window.location.href=`./materials/ver0${orderArray[0]["no"]}.html`;
   }, false)
 }
 
