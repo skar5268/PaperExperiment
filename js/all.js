@@ -175,12 +175,12 @@ if (orderArray[nextPage])
 // console.log(orderArray)
   // let finalString = randomLink(orderArray)
   localStorage.setItem("myOrder", JSON.stringify(orderArray));
-  window.location.href=`pages/materials/ver0${orderArray[nextPage]["no"]}.html`;
+  window.location.href=`materials/ver0${orderArray[nextPage]["no"]}.html`;
 
 } 
 else {
   localStorage.setItem("myOrder", JSON.stringify(orderArray));
-  window.location.href=`/pages/feedback.html`;
+  window.location.href=`feedback.html`;
 }
 
 
