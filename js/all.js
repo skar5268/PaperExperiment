@@ -129,7 +129,7 @@ if(finalList){
   <li>填寫回饋</li>`;
   
   // 儲存順序
-  localStorage.setItem("myOrder", JSON.stringify(randomNum));
+  localStorage.setItem("myOrder", JSON.stringify(orderArray));
   // console.log(localStorage.getItem('myOrder'))
 }
 
