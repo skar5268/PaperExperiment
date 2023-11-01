@@ -51,7 +51,7 @@ btn01.addEventListener('click', function(e){
 if (endBtn) {
   endBtn.addEventListener('click', function(e){
     localStorage.clear() 
-    window.location.href=`index.html`;
+    window.location.href=`https://skar5268.github.io/PaperExperiment/index.html`;
 
   },false)
 }
