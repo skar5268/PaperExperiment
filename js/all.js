@@ -2,7 +2,8 @@ const picCard = document.querySelector('.js-flip');
 const cardFront = document.querySelector('.cardFront');
 const cardBack = document.querySelector('.cardBack');
 const main = document.querySelector('.main')
-
+const QRcode = document.querySelector('.QRcode')
+const QRcode02 = document.querySelector('.QRcode02')
 
 const btn01 = document.getElementById('btn01')
 const questionnaire = document.querySelector('.questionnaire')
@@ -15,6 +16,19 @@ const finalList = document.getElementById("materialsLink");
 
 const starBtn = document.getElementById('starBtn')
 
+const qrIMG = document.getElementById('qrIMG')
+
+
+if (qrIMG){
+  qrIMG.addEventListener('click', function(e){
+    // console.log(132)
+
+    QRcode.classList.toggle('close')
+    if(QRcode02){
+      QRcode02.classList.toggle('close')
+    }
+  }, false)
+}
 // //addEventListener 監聽有沒有執行這個事件（這個 click 有沒有執行這個函式）
 
 if(starBtn){
