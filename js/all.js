@@ -42,6 +42,8 @@ btn01.addEventListener('click', function(e){
   // bannerFooter.classList.add('close')
   main.classList.add('close')
   questionnaire.classList.remove('close')
+  window.document.body.scrollTop = 0
+  window.document.documentElement.scrollTop = 0
 }, false)
 
 }
