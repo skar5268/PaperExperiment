@@ -284,6 +284,7 @@ img {
 }
 .banner ul.explainList,
 .bannerFooter ul.explainList {
+  list-style: decimal;
   font-size: 28px;
   display: block;
   text-align: left;
@@ -292,6 +293,11 @@ img {
 .banner ul.explainList li,
 .bannerFooter ul.explainList li {
   margin-bottom: 36px;
+}
+.banner ul.explainList li span,
+.bannerFooter ul.explainList li span {
+  color: #fcfaf2;
+  background-color: #434343;
 }
 
 .bannerFooter {
@@ -532,4 +538,9 @@ img {
 }
 .qrIMG img {
   transition: 0.5s;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
 }

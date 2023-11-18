@@ -286,6 +286,7 @@ img {
     }
 
     ul.explainList{
+        list-style: decimal;
         font-size: 28px;
 
         display: block;
@@ -293,6 +294,11 @@ img {
         margin-bottom: 36px;
         li {
             margin-bottom: 36px;
+
+            span{
+                color: $white;
+                background-color: $black;
+            }
         }
     }
 }
@@ -570,4 +576,9 @@ img {
     img{
         transition: 0.5s;
     }
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
 }

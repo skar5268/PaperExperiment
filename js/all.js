@@ -142,6 +142,7 @@ if(finalList){
   // let finalList = document.getElementById("materialsLink");
   finalList.innerHTML = `<li class="done">學習成效前測</li>
   ${finalString}
+  <li>學習情緒量表</li>
   <li>填寫回饋</li>`;
   
   // 儲存順序
@@ -196,7 +197,8 @@ if (orderArray[nextPage])
 } 
 else {
   localStorage.setItem("myOrder", JSON.stringify(orderArray));
-  window.location.href=`feedback.html`;
+  window.location.href=`emotionalData.html`;
+  // window.location.href=`feedback.html`;
 }
 
 
@@ -217,8 +219,16 @@ else {
 const iframe = document.getElementById('questionnaireIframe'); // 替換 'your-iframe-id' 為實際的 iframe ID
 
 if (iframe) {
-  iframe.onload = function() {
+  const presentPath = location.pathname;
+
+  if(presentPath != pages/emotionalData.html)
+  {
+      iframe.onload = function() {
     // 重新載入整個頁面至 iframe 導向的網頁
     window.location.href = iframe.contentWindow.location.href;
 };
+  }
+
+
+
 }
