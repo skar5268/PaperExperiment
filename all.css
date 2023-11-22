@@ -309,7 +309,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 10vh;
+  height: 15vh;
 }
 .topper h2 {
   font-size: 36px;
@@ -325,7 +325,7 @@ img {
 .process li {
   list-style: none;
   display: inline-block;
-  width: 8%;
+  width: 13%;
   position: relative;
   text-align: center;
 }
